@@ -50,6 +50,6 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
     elt = _ref[_i];
     moveLetter($(elt));
   }
-  temp = moveColor();
-  return $('body').css('background-color', '#' + temp + temp + temp);
+  temp = makeColor();
+  return $('body').css('background', '#' + temp + temp + temp);
 }, setTimeout(yo, 10), setInterval(main, 400));
