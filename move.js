@@ -31,7 +31,7 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
   }
   return hex;
 }, yo = function() {
-  var colory, faa, _i, _len, _ref, _results;
+  var $faa, colory, faa, _i, _len, _ref, _results;
 
   _ref = $('div');
   _results = [];
@@ -39,7 +39,10 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
     faa = _ref[_i];
     colory = makeColor();
     console.log(colory);
-    _results.push($(faa).css('color', colory));
+    $faa = $(faa);
+    $(faa).css('color', colory);
+    $faa.css('top', $faa.css('top'));
+    _results.push($faa.css('left', $faa.css('left')));
   }
   return _results;
 }, main = function() {

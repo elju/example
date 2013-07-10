@@ -26,7 +26,10 @@ $(
         for faa in $('div')
             colory = makeColor()
             console.log(colory)
+            $faa = $(faa)
             $(faa).css('color', colory)
+            $faa.css('top', $faa.css('top'))
+            $faa.css('left', $faa.css('left'))
 
     main = ->
         for elt, i in $('div')
