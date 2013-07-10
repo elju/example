@@ -43,13 +43,13 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
   }
   return _results;
 }, main = function() {
-  var elt, _i, _len, _ref, _results;
+  var elt, temp, _i, _len, _ref;
 
   _ref = $('div');
-  _results = [];
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     elt = _ref[_i];
-    _results.push(moveLetter($(elt)));
+    moveLetter($(elt));
   }
-  return _results;
+  temp = moveColor();
+  return $('body').css('background-color', '#' + temp + temp + temp);
 }, setTimeout(yo, 10), setInterval(main, 400));

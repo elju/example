@@ -30,6 +30,8 @@ $(
     main = ->
         for elt in $('div')
             moveLetter($(elt))
+        temp = moveColor()
+        $('body').css('background-color', '#' + temp + temp + temp)
 
     setTimeout(yo, 10)
     setInterval(main, 400)
