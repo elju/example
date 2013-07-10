@@ -7,7 +7,7 @@ $(
     moveLetter = ($elt, i) ->
         $elt.css(
             top: (Math.random() * (height - 50) * (Math.max(24 - i, 0) + 1) / 24)
-            left: (Math.random() * (width - 125))
+            left: (Math.random() * (width - 175))
         )
         $child = $($elt.children()[0])
         $child.css(
