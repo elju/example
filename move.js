@@ -10,7 +10,7 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
   });
   $child = $($elt.children()[0]);
   return $child.css({
-    'font-size': Math.random() * 290 + 6
+    'font-size': Math.random() * 200 + 100
   });
 }, makeColor = function() {
   var a, hex, i, nums, _i, _len;
