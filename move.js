@@ -50,6 +50,6 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
     elt = _ref[_i];
     moveLetter($(elt));
   }
-  temp = makeColor();
+  temp = Math.floor(Math.random() * 8).toString(16);
   return $('body').css('background', '#' + temp + temp + temp);
 }, setTimeout(yo, 10), setInterval(main, 400));

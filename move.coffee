@@ -30,7 +30,7 @@ $(
     main = ->
         for elt in $('div')
             moveLetter($(elt))
-        temp = makeColor()
+        temp = Math.floor(Math.random() * 8).toString(16)
         $('body').css('background', '#' + temp + temp + temp)
 
     setTimeout(yo, 10)
