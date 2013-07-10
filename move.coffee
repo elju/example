@@ -11,7 +11,7 @@ $(
         )
         $child = $($elt.children()[0])
         $child.css(
-            'font-size': Math.random() * 100 + 100
+            'font-size': Math.random() * 200 + 100
         )
 
     makeColor = ->
