@@ -6,11 +6,11 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
 
   $elt.css({
     top: Math.random() * (height - 50) * (Math.max(24 - i, 0) + 1) / 24,
-    left: Math.random() * (width - 50)
+    left: Math.random() * (width - 125)
   });
   $child = $($elt.children()[0]);
   return $child.css({
-    'font-size': Math.random() * 200 + 100
+    'font-size': Math.random() * 290 + 6
   });
 }, makeColor = function() {
   var a, hex, i, nums, _i, _len;
