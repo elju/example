@@ -21,7 +21,7 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
 
     _results = [];
     for (i = _i = 0; _i <= 5; i = ++_i) {
-      _results.push(Math.floor(Math.random() * 14).toString(16));
+      _results.push(Math.floor(Math.random() * 16).toString(16));
     }
     return _results;
   })();
@@ -50,6 +50,6 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
     elt = _ref[_i];
     moveLetter($(elt));
   }
-  temp = Math.floor(Math.random() * 8).toString(16);
+  temp = Math.floor(Math.random() * 2).toString(16);
   return $('body').css('background', '#' + temp + temp + temp);
 }, setTimeout(yo, 10), setInterval(main, 400));

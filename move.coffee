@@ -16,7 +16,7 @@ $(
     makeColor = ->
         hex = '#'
         nums = for i in [0..5]
-            Math.floor(Math.random() * 14).toString(16)
+            Math.floor(Math.random() * 16).toString(16)
         for a in nums
             hex += a
         return hex
@@ -30,7 +30,7 @@ $(
     main = ->
         for elt in $('div')
             moveLetter($(elt))
-        temp = Math.floor(Math.random() * 8).toString(16)
+        temp = Math.floor(Math.random() * 2).toString(16)
         $('body').css('background', '#' + temp + temp + temp)
 
     setTimeout(yo, 10)
