@@ -3,9 +3,9 @@ $(
     height = window.innerHeight
     
 
-    moveLetter = ($elt) ->
+    moveLetter = ($elt, i) ->
         $elt.css(
-            top: (Math.random() * (height - 50))
+            top: (Math.random() * (height - 50) * (Math.min(i, 12) + 1) / 12)
             left: (Math.random() * (width - 50))
         )
         $child = $($elt.children()[0])
@@ -28,8 +28,8 @@ $(
             $(faa).css('color', colory)
 
     main = ->
-        for elt in $('div')
-            moveLetter($(elt))
+        for elt, i in $('div')
+            moveLetter($(elt), i)
         temp = Math.floor(Math.random() * 2).toString(16)
         $('body').css('background', '#' + temp + temp + temp)
 
