@@ -3,7 +3,7 @@ body {
 }
 
 div {
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     overflow: visible;
     color: #000000;
