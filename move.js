@@ -5,7 +5,7 @@ $(width = window.innerWidth, height = window.innerHeight, moveLetter = function(
   var $child;
 
   $elt.css({
-    top: Math.random() * (height - 50) * (Math.min(i, 12) + 1) / 12,
+    top: Math.random() * (height - 50) * (Math.max(24 - i, 0) + 1) / 24,
     left: Math.random() * (width - 50)
   });
   $child = $($elt.children()[0]);
