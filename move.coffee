@@ -1,6 +1,7 @@
 $(
     width = window.innerWidth
     height = window.innerHeight
+    ## comment
     
 
     moveLetter = ($elt, i) ->
